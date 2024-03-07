@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe & Slipper Emporium</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        header {
+            background-color:rgb(236, 228, 216);
+            padding: 1em;
+            text-align: center;
+            border:2px solid black;
+        }
+
+        .hero {
+            background-image: url(data:image/jpeg;base64,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);
+            background-size: cover;
+            position: relative;
+            left:65px;
+            height: 70vh;
+            overflow: hidden;
+            width:90%;
+            border-radius:30px;
+        }
+
+       
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+            color: #862e0f; /* Coral */
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-top: 0;
+            color: #d65858; /* Khaki */
+        }
+
+        .products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 2em;
+        }
+
+        .product {
+            flex: 0 0 30%;
+            margin: 1em;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 2em;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 6px;
+            margin-bottom: 1em;
+        }
+
+        .product h2 {
+            color: #333;
+        }
+
+        .product p {
+            color: #555;
+        }
+
+        .contact {
+            text-align: center;
+            padding: 4em;
+            background-color: #333;
+            color: white;
+        }
+
+        .contact h2 {
+            color: #ff7f50; /* Coral */
+        }
+
+        .contact p {
+            color: #fff;
+        }
+
+        .contact button {
+            background-color: #ff7f50; /* Coral */
+            color: #fff;
+            padding: 0.8em 1.5em;
+            font-size: 1em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .contact button:hover {
+            background-color: #d95c3e; /* Lighter Coral */
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="color:#333"> Shoe & Slipper Emporium</h1>
+        <h3 style="color:#333">Step into style with our latest collection</h3>
+    </header>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Discover Comfort & Style</h1>
+            <p>Explore our exclusive range of shoes and slippers crafted for your comfort and fashion.</p>
+        </div>
+    </div>
+
+    <section class="products">
+        <div class="product">
+            <img src="C:\Users\Hariharan\Pictures\shoe2.jpg" alt="Product 1">
+            <h2>Comfort Max</h2>
+            <p>Experience maximum comfort with our stylish shoes</p>
+            <p>$59.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="C:\Users\Hariharan\Pictures\lightshoe.jpg" alt="Product 2">
+            <h2>Urban Chic</h2>
+            <p>Stay trendy with our urban chic slipper collection</p>
+            <p>$39.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="C:\Users\Hariharan\Pictures\redshoe.jpg" alt="Product 3">
+            <h2>Sporty Stride</h2>
+            <p>Hit the streets with confidence in our sporty shoes</p>
+            <p>$49.99</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or need assistance? Reach out to our support team.</p>
+        <button>Contact Now</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Shoe & Slipper Emporium. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
